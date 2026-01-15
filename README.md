@@ -2,12 +2,22 @@
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 SQL-first analysis of NBA player performance across eras, validating metrics under playoff stress and evaluating preseason signal reliability.
 
-## Key Result
+## Key Results
 
 | Metric | Regular → Playoff | Preseason → Regular |
 |------|------------------:|--------------------:|
 | Correlation (PPG) | **0.91** | **0.73** |
 | Std Dev (Error) | **0.29** | **0.40** |
+
+### Top Career Dominance
+
+| player_name   | seasons_played | career_gp | weighted_dom_idx | peak_dom | dom_volatility |
+| ------------- | -------------: | --------: | ---------------: | -------: | -------------: |
+| Luka Dončić   |              7 |       450 |             2.66 |     3.06 |           0.28 |
+| LeBron James  |             22 |      1562 |             2.62 |     2.91 |           0.18 |
+| Nikola Jokić  |             10 |       745 |             2.41 |     3.12 |           0.54 |
+| Stephen Curry |             15 |      1021 |             2.20 |     2.64 |           0.26 |
+| Kevin Durant  |             17 |      1123 |             2.24 |     2.72 |           0.26 |
 
 ## Core Conclusion
 Era-adjusted regular-season metrics are highly stable under playoff conditions, while preseason performance is substantially noisier and should be heavily discounted.
@@ -198,7 +208,7 @@ Career summaries were constructed using era-adjusted indices.
 
 ---
 
-### Top Career Dominance (Sample)
+### Top Career Dominance
 
 | player_name   | seasons_played | career_gp | weighted_dom_idx | peak_dom | dom_volatility |
 | ------------- | -------------: | --------: | ---------------: | -------: | -------------: |
