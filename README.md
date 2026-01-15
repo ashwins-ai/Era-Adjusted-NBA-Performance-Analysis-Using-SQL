@@ -1,5 +1,18 @@
 # Era-Adjusted NBA Player Performance Analysis (MySQL)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL-first analysis of NBA player performance across eras, validating metrics under playoff stress and evaluating preseason signal reliability.
 
+## Key Result
+
+| Metric | Regular → Playoff | Preseason → Regular |
+|------|------------------:|--------------------:|
+| Correlation (PPG) | **0.91** | **0.73** |
+| Std Dev (Error) | **0.29** | **0.40** |
+
+## Core Conclusion
+Era-adjusted regular-season metrics are highly stable under playoff conditions, while preseason performance is substantially noisier and should be heavily discounted.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Overview
 
 This repository contains a **SQL-first analytical study** of NBA player performance across historical eras and competitive contexts. The analysis constructs **era-normalized performance metrics**, validates them under competitive stress (playoffs), evaluates **signal reliability** (preseason), and aggregates results into **career-level dominance and robustness indicators**.
