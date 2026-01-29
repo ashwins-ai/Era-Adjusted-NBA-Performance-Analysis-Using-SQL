@@ -43,9 +43,9 @@ All transformations, aggregations, and statistical measures are implemented **ex
 
 **Core Tables**
 
-* `reg_raw` — regular season player statistics
-* `off_raw` — playoff player statistics
-* `pre_raw` — preseason player statistics
+* `reg_raw` - regular season player statistics
+* `off_raw` - playoff player statistics
+* `pre_raw` - preseason player statistics
 
 Raw datasets were ingested via CSV into MySQL staging tables and normalized through SQL views.
 
@@ -202,9 +202,9 @@ Career summaries were constructed using era-adjusted indices.
 
 **Metrics**
 
-* `weighted_dom_idx` — career-weighted dominance
-* `peak_dom` — maximum single-season dominance
-* `dom_volatility` — variability across seasons
+* `weighted_dom_idx` - career-weighted dominance
+* `peak_dom` - maximum single-season dominance
+* `dom_volatility` - variability across seasons
 
 ---
 
